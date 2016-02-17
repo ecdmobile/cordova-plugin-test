@@ -25,7 +25,7 @@
     <description>Cordova Device Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,device</keywords>
-    <repo>https://git-wip-us.apache.org/repos/asf/cordova-plugin-test.git</repo>
+    <repo>https://github.com/emc01/cordova-plugin-test</repo>
 
     <js-module src="www/test.js" name="device">
         <clobbers target="device" />
