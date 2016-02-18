@@ -4,9 +4,9 @@ var exec = require('cordova/exec'),
 
 var stuff = {
 
-    echoSomething: function (successCallback, errorCallback) {
+    echoSomething: function (successCallback, errorCallback, args) {
 
-        exec(successCallback, errorCallback, "Echo", "echo", []);
+        exec(successCallback, errorCallback, "Echo", "echo", args);
     }
 };
 
