@@ -21,23 +21,20 @@
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
     id="cordova-plugin-test"
     version="1.1.2-dev">
-    <name>Device</name>
-    <description>Cordova Device Plugin</description>
+    <name>Echo</name>
+    <description>Cordova Echo Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,device</keywords>
     <repo>https://github.com/emc01/cordova-plugin-test</repo>
 
-    <js-module src="www/test.js" name="device">
-        <clobbers target="device" />
+    <js-module src="www/test.js" name="echo">
+        <clobbers target="window.Echo" />
     </js-module>
 
 
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <!--<feature name="Device">-->
-                <!--<param name="ios-package" value="CDVDevice"/>-->
-            <!--</feature>-->
             <feature name="Echo">
                 <param name="ios-package" value="Echo" />
                 <param name="onload" value="true" />
